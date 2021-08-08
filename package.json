@@ -1,0 +1,22 @@
+{
+  "name": "ventas_movil",
+  "version": "1.0.0",
+  "description": "Proyecto Ingenieria de software",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davmasan04/ventas_movil.git"
+  },
+  "keywords": [
+    "ionic"
+  ],
+  "author": "ventas movil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davmasan04/ventas_movil/issues"
+  },
+  "homepage": "https://github.com/davmasan04/ventas_movil#readme"
+}
