@@ -1,7 +1,0 @@
-{
-  "name": "ventaCobroMovil",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
