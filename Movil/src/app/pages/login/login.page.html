@@ -1,0 +1,45 @@
+<ion-content>
+  <ion-slide>
+      <form (ngSubmit)="login( fLogin )" #fLogin="ngForm">
+        <ion-grid >
+          <ion-row>
+            <ion-col>
+              <img src="/assets/images/logo.png">
+            </ion-col>
+          </ion-row>
+        
+          <ion-row>
+            <ion-col>
+                <ion-list>
+                  <ion-item>
+                    <ion-label color="success">Usuario:</ion-label>
+                    <ion-input name="user"
+                                type="user"
+                                required></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label color="success">Contraseña: </ion-label>
+                  <ion-input name="password"
+                                type="password"
+                                required></ion-input>
+                </ion-item>
+
+              </ion-list>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button type="submit"
+                          color="tertiary"
+                          shape="round"
+                          routerLink="/inicio">
+                Entrar
+            </ion-button>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+    </form>
+  </ion-slide>
+</ion-content>
