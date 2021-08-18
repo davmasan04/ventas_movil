@@ -1,3 +1,4 @@
+import { createCssSelector } from '@angular/compiler/src/render3/view/template';
 import { Component, OnInit } from '@angular/core';
 
 interface Pedido{
@@ -19,7 +20,7 @@ export class PedidosPage implements OnInit {
       icon: 'storefront-outline',
       client: 'Sr. David Sanchez',
       status: 'ellipse-outline',
-      redirectTo: '/inicio'
+      redirectTo: '/inicio',
     },
     {
       icon: 'storefront-outline',
