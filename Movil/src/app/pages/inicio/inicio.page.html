@@ -5,22 +5,38 @@
 </ion-header>
 
 <ion-content>
-  <ion-button routerLink="#">
-    Ingresar Pedidos
-  </ion-button>
-  <ion-button routerLink="/pedidos">
-    Ver Pedidos
-  </ion-button>
-  <ion-button routerLink="#">
-    Rutas Clientes
-  </ion-button>
-  <ion-button routerLink="#">
-    Lista de clientes
-  </ion-button>
-  <ion-button routerLink="#">
-    Metas
-  </ion-button>
-  <ion-button routerLink="#">
-    Sincronización
-  </ion-button>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button class="ing_pedidos" routerLink="#">
+            Ingresar Pedido
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button class="ver_pedidos" routerLink="/pedidos">
+          Ver Pedidos
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">  
+        <ion-button class="rut_clientes" routerLink="#">
+          Rutas Clientes
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button class="list_clientes" routerLink="#">
+          Lista de clientes
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button class="metas" routerLink="#">
+          Metas
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button class="sincro" routerLink="#">
+          Sincronización
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
