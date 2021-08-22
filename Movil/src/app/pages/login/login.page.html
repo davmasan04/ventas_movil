@@ -1,7 +1,7 @@
 <ion-content>
   <ion-slide>
       <form (ngSubmit)="login( fLogin )" #fLogin="ngForm">
-        <ion-grid >
+        <ion-grid>
           <ion-row>
             <ion-col>
               <img src="/assets/images/logo.png">
@@ -30,15 +30,16 @@
         </ion-row>
         <ion-row>
           <ion-col>
-            <ion-button type="submit"
+            <ion-button 
+                          type="submit"
                           color="tertiary"
                           shape="round"
                           routerLink="/inicio">
+                          
                 Entrar
             </ion-button>
           </ion-col>
         </ion-row>
-
       </ion-grid>
     </form>
   </ion-slide>

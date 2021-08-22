@@ -43,7 +43,6 @@ export class PedidosPage implements OnInit {
   ];
 
   constructor() { }
-
   ngOnInit() {
   }
 
