@@ -1,6 +1,6 @@
 <ion-content>
   <ion-slide>
-      <form (ngSubmit)="login( fLogin )" #fLogin="ngForm">
+      <form (ngSubmit)="login(user.usuario,user.password)" #fLogin="ngForm">
         <ion-grid>
           <ion-row>
             <ion-col>
@@ -14,15 +14,17 @@
                   <ion-item>
                     <ion-label color="success">Usuario:</ion-label>
                     <ion-input name="user"
-                                type="user"
-                                required></ion-input>
+                                type="text"
+                                required
+                                [(ngModel)]="user.usuario"></ion-input>
                 </ion-item>
 
                 <ion-item>
                   <ion-label color="success">Contraseña: </ion-label>
                   <ion-input name="password"
                                 type="password"
-                                required></ion-input>
+                                required
+                                [(ngModel)]="user.password"></ion-input>
                 </ion-item>
 
               </ion-list>
@@ -32,12 +34,14 @@
           <ion-col>
             <ion-button 
                           type="submit"
+                          (click)="login(user.usuario, user.password)"
                           color="tertiary"
                           shape="round"
+                          [disabled]="!fLogin.valid"
                           routerLink="/inicio">
-                          
                 Entrar
             </ion-button>
+            <p>¿Te olvidaste de la contraseña?</p>
           </ion-col>
         </ion-row>
       </ion-grid>
