@@ -5,6 +5,7 @@ interface Pedido{
   icon: string;
   client: string;
   status: string;
+  color: string;
   redirectTo: string;
 }
 
@@ -20,24 +21,28 @@ export class PedidosPage implements OnInit {
       icon: 'storefront-outline',
       client: 'Sr. David Sanchez',
       status: 'ellipse-outline',
+      color: 'warning',
       redirectTo: '/inicio',
     },
     {
       icon: 'storefront-outline',
       client: 'Sra. María Lourdes',
       status: 'ellipse-outline',
+      color: 'success',
       redirectTo: '/inicio'
     },
     {
       icon: 'storefront-outline',
       client: 'Sr. Ballejo Arauz',
       status: 'ellipse-outline',
+      color: 'medium',
       redirectTo: '/inicio'
     },
     {
       icon: 'storefront-outline',
       client: 'Sra. Gloria Bonifaz Pazmiño',
       status: 'ellipse-outline',
+      color: 'primary',
       redirectTo: '/inicio'
     },
   ];

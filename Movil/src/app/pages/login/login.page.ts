@@ -11,7 +11,15 @@ import { ApiserviceService } from '../../servicios/apiservice.service';
 })
 export class LoginPage {
 
-  resultado: any;
+  user = {
+    usuario:'',
+    password:''
+  }
+
+  constructor (){
+
+  }
+  /*resultado: any;
   
   constructor ( private servicio: ApiserviceService ){
     this.servicio.obtenerDatos(1).subscribe(
@@ -19,10 +27,12 @@ export class LoginPage {
         this.resultado = JSON.stringify(respuesta);
       }
     )
-  }
+  }*/
   
-  login( fLogin: NgForm ){
-    console.log( this.resultado )
+  login(user: string, pass:string ){
+    if (user = this.user.usuario){
+      return `routerLink="/inicio"`;
+    }
   }
 
 }

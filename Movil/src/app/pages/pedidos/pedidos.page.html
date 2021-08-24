@@ -5,9 +5,11 @@
       <ion-item *ngFor="let p of pedidos"
                 [routerLink]="p.redirectTo"
                 detail>
-        <ion-icon [name]="p.icon" slot="start"></ion-icon>
+        <ion-icon [name]="p.icon" slot="start">
+          <p>Tienda</p>
+        </ion-icon>
         {{ p.client }}
-        <ion-icon [name]="p.status" color="warning" slot="end"></ion-icon>
+        <ion-icon [name]="p.status" [color]="p.color" slot="end"></ion-icon>
       </ion-item>
     </ion-list>
   </ion-content>

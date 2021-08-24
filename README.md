@@ -5,6 +5,10 @@
 - Sanchez Chinga David
 - Marin Suarez Katiuska
 
+## Link
+Cargue por primera vez con internet y luego desactive todo acceso a internet:
+https://ventas-f513c.web.app/login
+
 ## Frontend - Ionic
 ### Instalación de dependencias
 - npm install
